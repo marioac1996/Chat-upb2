@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>CHAT UPB</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 style="color:#FFF">CHAT UPB</h1>
+    </header>
+ <div class="container">
+<br>
+    <section>
+      <div id="change_username">
+          <input type="text" id="username" class="col-sm-2 col-form-control" placeholder="username"> 
+            <button id="send_username" class="btn btn-primary">Cambiar nombre</button>
+            <button href="index.ejs" class="btn btn-danger float-right">Cerrar</button>
+      </div>
+
+    </section>
+        <br>
+    <section id="chatroom">
+          <div id="feedback" class="card-block">
+              </div>
+
+    </section>
+    <br>
+      <div id="input_zone"> 
+
+          <textarea id="message"  class="col-sm-20 form-control" placeholder="Escribe el mensaje"></textarea>
+           <br>
+          <button type="button" id="send_message" class="btn btn-success float-right">Enviar</button>
+          <br>
+          <br>
+         
+      </div>
+</div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
